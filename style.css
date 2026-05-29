@@ -1,58 +1,130 @@
 :root {
-    --bluebg: #1992D4;
-    --sidebar-text: #ffffff;
+  --bluebg: #1992d4;
+  --sidebar-text: #ffffff;
 }
 
 body {
-    display: flex;
-    flex-direction:row;
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 img {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 .icl {
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    color: var(--sidebar-text);
-    font-size: 18px;
-    font-weight: 600;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  color: var(--sidebar-text);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 #panels .icl span,
 #extra .icl span {
-    padding-left: 17px;
+  padding-left: 17px;
 }
 
 #left {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bluebg);
-    color: var(--sidebar-text);
-    padding: 5px 30px;
-    width: 260px;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bluebg);
+  color: var(--sidebar-text);
+  padding: 5px 30px;
+  width: 260px;
+  min-height: 100vh;
 }
 
 #title {
-    margin: 5px 0;
-    height: min-content;
+  margin: 5px 0;
+  height: min-content;
 }
 
-
-#title>img {
-    height: 50px;
-    width: 50px;
+#title > img {
+  height: 50px;
+  width: 50px;
 }
 
 #extra {
-    margin-top: 32px;
+  margin-top: 32px;
 }
+
+#first,
+#second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5%;
+}
+#first {
+  width: 90%;
+}
+#search {
+  flex: 1;
+}
+input {
+  width: 80%;
+  border: none;
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: #e2e8f0;
+}
+
+input:focus {
+  outline: none;
+}
+
+#right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#profile {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25%;
+  margin-right: 20px;
+}
+
+#second span {
+  color: black;
+}
+
+#header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hi {
+  display: flex;
+  flex-direction: column;
+}
+.hi span:first-child {
+  font-size: 10px;
+}
+.hi span:last-child {
+  font-size: 36px;
+}
+#btns {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#btns button {
+  border: none;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: var(--bluebg);
+  color: white;
+}
+
